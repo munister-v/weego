@@ -3,657 +3,667 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>WEEGO — створення сайтів, веб-додатків та інформаційних систем</title>
-  <meta name="description" content="WEEGO створює та супроводжує сайти, веб-додатки, CRM, особисті кабінети, Telegram-боти, онлайн-магазини та інформаційні системи для бізнесу.">
-  <meta property="og:title" content="WEEGO — цифрова студія розробки">
-  <meta property="og:description" content="WEEGO створює та супроводжує сайти, веб-додатки, CRM, особисті кабінети, Telegram-боти та інформаційні системи для бізнесу та міжнародних проєктів.">
+  <title>WEEGO — Цифрові рішення для бізнесу</title>
+  <meta name="description" content="WEEGO створює та супроводжує сайти, веб-додатки, CRM, кабінети, Telegram-боти та інформаційні системи. Офіційно для ФОП, ТОВ і фондів. Підписка: розробка, хостинг, підтримка — одна ціна.">
+  <meta property="og:title" content="WEEGO — Цифрові рішення для бізнесу">
+  <meta property="og:description" content="Сайти, веб-додатки, CRM, кабінети, Telegram-боти. Офіційно для ФОП і ТОВ. Підписка — розробка, хостинг, підтримка в одній ціні.">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://weego.munister.com.ua">
-  <meta property="og:image" content="https://weego.munister.com.ua/og-image.png">
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="WEEGO — цифрова студія розробки">
-  <meta name="twitter:description" content="Сайти, веб-додатки, CRM, кабінети, Telegram-боти та інформаційні системи для бізнесу.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:ital,wght@0,300;0,400;1,300;1,400&family=Manrope:wght@300;400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-  <!-- Navigation -->
-  <nav class="nav" id="nav">
-    <div class="container">
-      <div class="nav__inner">
-        <a href="#" class="nav__logo"><span class="logo-w">W</span>EEGO</a>
-        <ul class="nav__links">
-          <li><a href="#services">Послуги</a></li>
-          <li><a href="#system">Система</a></li>
-          <li><a href="#experience">Досвід</a></li>
-          <li><a href="#formats">Формати</a></li>
-          <li><a href="#team">Команда</a></li>
-          <li><a href="#stack">Стек</a></li>
-        </ul>
-        <a href="#contact" class="btn btn--primary btn--sm nav__cta">Обговорити проєкт</a>
-        <button class="nav__burger" id="burger" aria-label="Меню">
-          <span></span><span></span><span></span>
-        </button>
+<!-- ═══ NAV ═══ -->
+<nav class="nav" id="nav">
+  <a href="/" class="n-logo">
+    <span class="n-dot"></span>WEEGO
+  </a>
+  <ul class="n-links">
+    <li><a href="#services">Послуги</a></li>
+    <li><a href="#formats">Тарифи</a></li>
+    <li><a href="#fop">ФОП / ТОВ</a></li>
+    <li><a href="#team">Команда</a></li>
+    <li><a href="#stack">Стек</a></li>
+  </ul>
+  <div class="n-r">
+    <a href="https://t.me/munister_v" target="_blank" rel="noopener">Telegram ↗</a>
+    <a href="mailto:hello@weego.studio">Написати ↗</a>
+  </div>
+  <button class="n-burger" id="burger" aria-label="Меню">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+
+<!-- Mobile nav -->
+<div class="mobile-nav" id="mobileNav">
+  <a href="#services" class="m-link">Послуги</a>
+  <a href="#formats" class="m-link">Тарифи</a>
+  <a href="#fop" class="m-link">ФОП / ТОВ</a>
+  <a href="#team" class="m-link">Команда</a>
+  <a href="#stack" class="m-link">Стек</a>
+  <a href="https://t.me/munister_v" class="m-link m-link--ac" target="_blank" rel="noopener">Telegram ↗</a>
+</div>
+
+<!-- ═══ HERO ═══ -->
+<section class="hero" id="hero">
+  <div class="hero-bg"></div>
+  <div class="hero-grid-lines"></div>
+  <div class="hero-inner">
+    <div class="hero-tag">// Цифрова студія</div>
+    <h1 class="hero-h">
+      Створюємо системи,<br>
+      що <em>працюють</em><br>
+      на бізнес
+    </h1>
+    <p class="hero-sub">
+      WEEGO — студія розробки сайтів, веб-додатків та інформаційних систем.<br>
+      Від лендінгу до платформи з кабінетами, оплатами й аналітикою.
+    </p>
+    <div class="hero-cta-wrap">
+      <a href="https://t.me/munister_v" target="_blank" rel="noopener" class="btn btn-ac">Написати в Telegram ↗</a>
+      <a href="#formats" class="btn btn-gh">Тарифи ↓</a>
+    </div>
+    <div class="hero-stats">
+      <div class="hero-stat">
+        <div class="hero-stat-v">50+</div>
+        <div class="hero-stat-l">Готових проєктів</div>
+      </div>
+      <div class="hero-stat">
+        <div class="hero-stat-v">від 3 дн.</div>
+        <div class="hero-stat-l">Термін виконання</div>
+      </div>
+      <div class="hero-stat">
+        <div class="hero-stat-v">UA + EU</div>
+        <div class="hero-stat-l">Ринки</div>
+      </div>
+      <div class="hero-stat">
+        <div class="hero-stat-v">24/7</div>
+        <div class="hero-stat-l">Підтримка і моніторинг</div>
       </div>
     </div>
-  </nav>
-
-  <!-- Mobile Menu -->
-  <div class="mobile-menu" id="mobileMenu">
-    <ul>
-      <li><a href="#services" class="mobile-link">Послуги</a></li>
-      <li><a href="#system" class="mobile-link">Система</a></li>
-      <li><a href="#experience" class="mobile-link">Досвід</a></li>
-      <li><a href="#formats" class="mobile-link">Формати</a></li>
-      <li><a href="#team" class="mobile-link">Команда</a></li>
-      <li><a href="#stack" class="mobile-link">Стек</a></li>
-      <li><a href="#contact" class="mobile-link mobile-cta">Обговорити проєкт →</a></li>
-    </ul>
   </div>
 
-  <!-- ═══ HERO ═══ -->
-  <section class="hero" id="hero">
-    <div class="hero__bg-glow hero__bg-glow--1"></div>
-    <div class="hero__bg-glow hero__bg-glow--2"></div>
-    <div class="hero__bg-glow hero__bg-glow--3"></div>
-    <div class="container">
-      <div class="hero__inner">
-        <div class="hero__content">
-          <div class="hero__badge">
-            <span class="hero__badge-dot"></span>
-            Цифрова студія · UA + Міжнародні проєкти
-          </div>
-          <h1 class="hero__title">
-            Створюємо цифрові системи, <span class="text-gradient">які працюють</span> на ваш бізнес
-          </h1>
-          <p class="hero__subtitle">
-            WEEGO — студія розробки сайтів, веб-додатків та інформаційних систем. Проєктуємо, запускаємо і супроводжуємо рішення: від першого лендінгу до складної платформи з кабінетами, оплатами та аналітикою.
-          </p>
-          <div class="hero__actions">
-            <a href="#contact" class="btn btn--primary btn--lg">
-              Обговорити проєкт
-              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
-            </a>
-            <a href="#services" class="btn btn--ghost btn--lg">Переглянути послуги</a>
-          </div>
-          <div class="hero__stats">
-            <div class="hero__stat">
-              <span class="hero__stat-num">50+</span>
-              <span class="hero__stat-label">Проєктів</span>
-            </div>
-            <div class="hero__stat-divider"></div>
-            <div class="hero__stat">
-              <span class="hero__stat-num">UA&nbsp;+&nbsp;EU</span>
-              <span class="hero__stat-label">Ринки</span>
-            </div>
-            <div class="hero__stat-divider"></div>
-            <div class="hero__stat">
-              <span class="hero__stat-num">6</span>
-              <span class="hero__stat-label">Типів рішень</span>
-            </div>
-          </div>
+  <!-- Dashboard mockup -->
+  <div class="hero-dash reveal">
+    <div class="dash-bar">
+      <div class="dash-dots"><span></span><span></span><span></span></div>
+      <span class="dash-title">weego.app · система</span>
+    </div>
+    <div class="dash-body">
+      <div class="dash-row">
+        <div class="dash-cell">
+          <div class="dash-lbl">Заявок сьогодні</div>
+          <div class="dash-val">24</div>
+          <div class="dash-change pos">↑ 12%</div>
         </div>
-
-        <!-- Dashboard Mockup -->
-        <div class="hero__visual">
-          <div class="hero__dashboard">
-            <div class="dashboard__header">
-              <div class="dashboard__dots"><span></span><span></span><span></span></div>
-              <span class="dashboard__title">weego.app&nbsp;&nbsp;·&nbsp;&nbsp;система управління</span>
-            </div>
-            <div class="dashboard__content">
-              <div class="dashboard__row">
-                <div class="dashboard__card">
-                  <span class="dashboard__label">Заявок сьогодні</span>
-                  <span class="dashboard__value">24</span>
-                  <span class="dashboard__change positive">↑ 12% від вчора</span>
-                </div>
-                <div class="dashboard__card">
-                  <span class="dashboard__label">Статус системи</span>
-                  <div class="status-badge status-badge--online">
-                    <span class="status-dot"></span>Online
-                  </div>
-                  <span class="dashboard__change" style="color:var(--text-3);font-size:.7rem">uptime 99.9%</span>
-                </div>
-              </div>
-              <div class="dashboard__card">
-                <span class="dashboard__label">Активність за тиждень</span>
-                <div class="mini-chart">
-                  <div class="bar" style="height:38%"></div>
-                  <div class="bar" style="height:62%"></div>
-                  <div class="bar" style="height:47%"></div>
-                  <div class="bar" style="height:78%"></div>
-                  <div class="bar" style="height:55%"></div>
-                  <div class="bar" style="height:88%"></div>
-                  <div class="bar bar--active" style="height:72%"></div>
-                </div>
-              </div>
-              <div class="dashboard__card">
-                <div class="request-item">
-                  <span class="request-dot request-dot--done"></span>
-                  <span class="request-text">Лендінг запущено</span>
-                  <span class="request-time">10:24</span>
-                </div>
-                <div class="request-item">
-                  <span class="request-dot request-dot--progress"></span>
-                  <span class="request-text">Кабінет в розробці</span>
-                  <span class="request-time">11:02</span>
-                </div>
-                <div class="request-item">
-                  <span class="request-dot request-dot--new"></span>
-                  <span class="request-text">Нова заявка: CRM-система</span>
-                  <span class="request-time">12:15</span>
-                </div>
-              </div>
-              <div class="dashboard__card dashboard__card--code">
-                <div class="code-line"><span class="code-purple">const</span> <span class="code-blue">system</span> = {</div>
-                <div class="code-line pl">  <span class="code-green">api</span>: <span class="code-yellow">'weego.app/v1'</span>,</div>
-                <div class="code-line pl">  <span class="code-green">status</span>: <span class="code-lime">'active'</span>,</div>
-                <div class="code-line pl">  <span class="code-green">modules</span>: <span class="code-yellow">['crm', 'pay', 'bot']</span></div>
-                <div class="code-line">};</div>
-              </div>
-            </div>
-          </div>
-          <div class="hero__floating hero__floating--1">
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#6366f1" stroke-width="2"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/></svg>
-            Веб-платформа
-          </div>
-          <div class="hero__floating hero__floating--2">
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#84cc16" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
-            Безпека та надійність
-          </div>
-          <div class="hero__floating hero__floating--3">
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#a855f7" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 8v4l3 3"/></svg>
-            24/7 онлайн
-          </div>
+        <div class="dash-cell">
+          <div class="dash-lbl">Статус</div>
+          <div class="dash-pill"><span class="dash-dot-g"></span>Online</div>
+          <div class="dash-sub">uptime 99.9%</div>
         </div>
+      </div>
+      <div class="dash-chart-wrap">
+        <div class="dash-lbl">Активність</div>
+        <div class="dash-chart">
+          <div class="dc-bar" style="--h:38%"></div>
+          <div class="dc-bar" style="--h:62%"></div>
+          <div class="dc-bar" style="--h:47%"></div>
+          <div class="dc-bar" style="--h:80%"></div>
+          <div class="dc-bar" style="--h:55%"></div>
+          <div class="dc-bar" style="--h:88%"></div>
+          <div class="dc-bar dc-bar--ac" style="--h:72%"></div>
+        </div>
+      </div>
+      <div class="dash-reqs">
+        <div class="dash-req"><span class="req-dot done"></span><span>Лендінг запущено</span><span class="req-t">10:24</span></div>
+        <div class="dash-req"><span class="req-dot prog"></span><span>Кабінет в розробці</span><span class="req-t">11:02</span></div>
+        <div class="dash-req"><span class="req-dot new"></span><span>Нова заявка: CRM</span><span class="req-t">12:15</span></div>
+      </div>
+      <div class="dash-code">
+        <span class="c-kw">const</span> <span class="c-nm">system</span> = {<br>
+        &nbsp;&nbsp;<span class="c-gn">api</span>: <span class="c-st">'weego.app/v1'</span>,<br>
+        &nbsp;&nbsp;<span class="c-gn">status</span>: <span class="c-ac">'active'</span><br>
+        };
       </div>
     </div>
-  </section>
+  </div>
+</section>
 
-  <!-- ═══ SERVICES ═══ -->
-  <section class="section" id="services">
-    <div class="container">
-      <div class="section__header">
-        <span class="section__badge">Послуги</span>
-        <h2 class="section__title">Що ми <span class="text-gradient">робимо</span></h2>
-        <p class="section__subtitle">Від першого лендінгу до складної інформаційної системи — будуємо та супроводжуємо цифрові продукти на кожному рівні.</p>
-      </div>
-      <div class="services__grid">
-        <div class="service-card" data-animate>
-          <div class="service-card__icon">
-            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/></svg>
-          </div>
-          <h3>Сайти та лендінги</h3>
-          <p>Швидкий старт для бізнесу або продукту. Адаптивний дизайн, SEO-основа, форми зворотного зв'язку.</p>
-        </div>
-        <div class="service-card" data-animate>
-          <div class="service-card__icon">
-            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
-          </div>
-          <h3>Корпоративні сайти</h3>
-          <p>Повноцінна веб-присутність компанії: структура, контент, блог, CMS для самостійного оновлення.</p>
-        </div>
-        <div class="service-card" data-animate>
-          <div class="service-card__icon">
-            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 01-8 0"/></svg>
-          </div>
-          <h3>Інтернет-магазини</h3>
-          <p>E-commerce з каталогом, кошиком, онлайн-оплатою та зручною адміністрацією замовлень.</p>
-        </div>
-        <div class="service-card" data-animate>
-          <div class="service-card__icon">
-            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
-          </div>
-          <h3>Особисті кабінети</h3>
-          <p>Авторизація, ролі, особистий простір для клієнта або адміна — зручний інтерфейс роботи з системою.</p>
-        </div>
-        <div class="service-card" data-animate>
-          <div class="service-card__icon">
-            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18M9 21V9"/></svg>
-          </div>
-          <h3>CRM та облік заявок</h3>
-          <p>Система управління клієнтами і заявками: статуси, воронки, нотатки, сповіщення, аналітика.</p>
-        </div>
-        <div class="service-card" data-animate>
-          <div class="service-card__icon">
-            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M21 15a2 2 0 01-2 2H7l-4 4V5a2 2 0 012-2h14a2 2 0 012 2z"/></svg>
-          </div>
-          <h3>Telegram-боти</h3>
-          <p>Автоматизація прийому заявок, сповіщень та взаємодії з клієнтами через Telegram.</p>
-        </div>
-        <div class="service-card" data-animate>
-          <div class="service-card__icon">
-            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="5" width="20" height="14" rx="2"/><line x1="2" y1="10" x2="22" y2="10"/></svg>
-          </div>
-          <h3>Онлайн-оплата</h3>
-          <p>Підключення платіжних систем: LiqPay, Stripe, Monobank — для сайтів, магазинів та кабінетів.</p>
-        </div>
-        <div class="service-card" data-animate>
-          <div class="service-card__icon">
-            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><line x1="18" y1="20" x2="18" y2="10"/><line x1="12" y1="20" x2="12" y2="4"/><line x1="6" y1="20" x2="6" y2="14"/></svg>
-          </div>
-          <h3>Аналітика та звіти</h3>
-          <p>Дашборди, графіки, звіти по замовленнях, трафіку та конверсіях — дані для прийняття рішень.</p>
-        </div>
-        <div class="service-card" data-animate>
-          <div class="service-card__icon">
-            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><ellipse cx="12" cy="5" rx="9" ry="3"/><path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"/><path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"/></svg>
-          </div>
-          <h3>Інформаційні системи</h3>
-          <p>Комплексні платформи: бази даних, API, інтеграції, бекенд-логіка та інтерфейси для роботи з даними.</p>
-        </div>
-        <div class="service-card service-card--wide" data-animate>
-          <div class="service-card__icon">
-            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
-          </div>
-          <div>
-            <h3>Підтримка та розвиток проєктів</h3>
-            <p>Ведення вашого продукту після запуску: оновлення, доопрацювання, моніторинг, нові функції. Ми залишаємось поряд і допомагаємо проєкту рости.</p>
-          </div>
-        </div>
+<!-- ═══ WHY ═══ -->
+<section class="why-sub reveal">
+  <div class="why-item">
+    <div class="why-ico">—</div>
+    <div class="why-name">Підписка, не кошторис</div>
+    <div class="why-desc">Розробка, хостинг, оновлення і підтримка — одна щомісячна оплата без сюрпризів.</div>
+  </div>
+  <div class="why-item">
+    <div class="why-ico">—</div>
+    <div class="why-name">Система, не просто сайт</div>
+    <div class="why-desc">Кожне рішення будується з модулів: кабінет, CRM, оплати, бот — підключаєте поступово.</div>
+  </div>
+  <div class="why-item">
+    <div class="why-ico">—</div>
+    <div class="why-name">Офіційно для ФОП і ТОВ</div>
+    <div class="why-desc">Закривні документи, акт виконаних робіт, договір — без будь-яких ускладнень.</div>
+  </div>
+</section>
+
+<!-- ═══ QUICK NAV ═══ -->
+<div class="quick-nav reveal">
+  <a href="#services" class="qn-link">Послуги</a>
+  <a href="#formats" class="qn-link">Тарифи</a>
+  <a href="#fop" class="qn-link">ФОП / ТОВ</a>
+  <a href="#system" class="qn-link">Система</a>
+  <a href="#team" class="qn-link">Команда</a>
+  <a href="#process" class="qn-link">Процес</a>
+  <a href="https://t.me/munister_v" class="qn-link qn-link--ac" target="_blank" rel="noopener">Telegram @munister_v</a>
+  <a href="#contact" class="qn-link">Старт проєкту</a>
+  <div class="qn-note">Розробка здійснюється командою <strong>WEEGO</strong></div>
+</div>
+
+<!-- ═══ SERVICES ═══ -->
+<section class="section" id="services">
+  <div class="section-head reveal">
+    <div class="section-tag">// Послуги</div>
+    <h2 class="section-h">Що ми<br><em>робимо</em></h2>
+    <p class="section-note">Від першого лендінгу до складної інформаційної системи — будуємо та супроводжуємо цифрові продукти на кожному рівні.</p>
+  </div>
+  <div class="srv-grid">
+    <article class="srv reveal">
+      <div class="srv-tag">Сайт</div>
+      <h3 class="srv-h">Сайти та лендінги</h3>
+      <p class="srv-desc">Швидкий старт для бізнесу або продукту. Адаптивний дизайн, SEO-основа, форми зворотного зв'язку.</p>
+      <ul class="srv-list">
+        <li>Адаптивний дизайн</li>
+        <li>SEO-оптимізація</li>
+        <li>Форма заявки</li>
+        <li>CMS — самостійне редагування</li>
+        <li>Хостинг + SSL</li>
+      </ul>
+      <div class="srv-price">від ₴600<span>/міс</span></div>
+    </article>
+    <article class="srv reveal">
+      <div class="srv-tag">Бізнес</div>
+      <h3 class="srv-h">Корпоративний сайт</h3>
+      <p class="srv-desc">Повноцінна веб-присутність: структура, контент, блог, CMS для самостійного оновлення.</p>
+      <ul class="srv-list">
+        <li>До 10 сторінок</li>
+        <li>Ви самі змінюєте текст і фото</li>
+        <li>Пріоритетна підтримка</li>
+        <li>Хостинг + домен + SSL</li>
+        <li>Аналітика трафіку</li>
+      </ul>
+      <div class="srv-price">від ₴1&nbsp;500<span>/міс</span></div>
+    </article>
+    <article class="srv reveal">
+      <div class="srv-tag srv-tag--pop">Популярне</div>
+      <h3 class="srv-h">Кабінет + CRM</h3>
+      <p class="srv-desc">Особистий кабінет для клієнта, система обліку заявок, воронки, статуси, сповіщення.</p>
+      <ul class="srv-list">
+        <li>Реєстрація / вхід</li>
+        <li>Ролі користувачів</li>
+        <li>Картки заявок і статуси</li>
+        <li>Сповіщення в Telegram</li>
+        <li>Аналітика для власника</li>
+      </ul>
+      <div class="srv-price">від ₴2&nbsp;600<span>/міс</span></div>
+    </article>
+    <article class="srv reveal">
+      <div class="srv-tag">E-commerce</div>
+      <h3 class="srv-h">Інтернет-магазин</h3>
+      <p class="srv-desc">Каталог товарів, кошик, онлайн-оплата, доставка Новою Поштою, облік залишків.</p>
+      <ul class="srv-list">
+        <li>Каталог з фото і цінами</li>
+        <li>Кошик і онлайн-оплата</li>
+        <li>Нова Пошта / Укрпошта</li>
+        <li>Склад і залишки</li>
+        <li>Звіти по продажах</li>
+      </ul>
+      <div class="srv-price">від ₴3&nbsp;000<span>/міс</span></div>
+    </article>
+    <article class="srv reveal">
+      <div class="srv-tag">Авто</div>
+      <h3 class="srv-h">Telegram-бот</h3>
+      <p class="srv-desc">Автоматизація прийому заявок, сповіщень і взаємодії з клієнтами через Telegram.</p>
+      <ul class="srv-list">
+        <li>Прийом заявок через бота</li>
+        <li>Сповіщення менеджеру</li>
+        <li>Автовідповіді клієнтам</li>
+        <li>Підключення до сайту</li>
+        <li>Адмін-панель</li>
+      </ul>
+      <div class="srv-price">від ₴1&nbsp;400<span>/міс</span></div>
+    </article>
+    <article class="srv reveal">
+      <div class="srv-tag">Платформа</div>
+      <h3 class="srv-h">Інформаційна система</h3>
+      <p class="srv-desc">Комплексна платформа: бази даних, API, інтеграції, ролі, оплати, аналітика, кабінети.</p>
+      <ul class="srv-list">
+        <li>Архітектура під задачу</li>
+        <li>API та інтеграції</li>
+        <li>Онлайн-оплата</li>
+        <li>Реал-тайм / WebSocket</li>
+        <li>Повний технічний супровід</li>
+      </ul>
+      <div class="srv-price">від ₴6&nbsp;000<span>/міс</span></div>
+    </article>
+  </div>
+  <div class="srv-foot reveal">
+    <p>Все включено — дизайн, розробка, хостинг і підключення домену. Після запуску <strong>сайт і код — повністю ваші</strong>.</p>
+    <a href="#formats" class="btn btn-gh">Тарифи ↓</a>
+  </div>
+</section>
+
+<!-- ═══ FORMATS / PLANS ═══ -->
+<section class="section" id="formats">
+  <div class="section-head reveal">
+    <div class="section-tag">// Тарифи</div>
+    <h2 class="section-h">Оберіть<br><em>свій формат</em></h2>
+    <p class="section-note">Підписка — все включено: розробка, хостинг, підтримка і оновлення — одна ціна на місяць, без сюрпризів.</p>
+  </div>
+  <div class="plans-grid reveal">
+    <div class="plan">
+      <div class="p-tier">Старт</div>
+      <h3 class="p-name">Лендінг</h3>
+      <p class="p-desc">Одна сторінка — представити бізнес і почати отримувати клієнтів</p>
+      <div class="p-price">₴600<span>/міс</span></div>
+      <div class="p-ready">Готовність за 3–5 днів</div>
+      <div class="p-incl">Включає</div>
+      <ul class="p-list">
+        <li>Красива сторінка до 6 блоків</li>
+        <li>Ідеально на телефоні і ПК</li>
+        <li>Форма зворотного зв'язку</li>
+        <li>Базове SEO</li>
+        <li>Хостинг + SSL</li>
+        <li>Підключення домену</li>
+        <li class="p-list--off">Онлайн-оплата</li>
+        <li class="p-list--off">Особисті кабінети</li>
+      </ul>
+      <a href="https://t.me/munister_v" target="_blank" rel="noopener" class="btn btn-gh plan-btn">Замовити</a>
+    </div>
+    <div class="plan plan--pop">
+      <div class="p-pop-badge">Популярне</div>
+      <div class="p-tier">Бізнес</div>
+      <h3 class="p-name">Корпоративний сайт</h3>
+      <p class="p-desc">Повноцінний сайт, який ви можете редагувати самі</p>
+      <div class="p-price">₴1&nbsp;500<span>/міс</span></div>
+      <div class="p-ready">Готовність за 7–14 днів</div>
+      <div class="p-incl">Включає</div>
+      <ul class="p-list">
+        <li>До 10 сторінок</li>
+        <li>Ви самі змінюєте текст і фото</li>
+        <li>SEO-оптимізація</li>
+        <li>Форми зворотного зв'язку</li>
+        <li>Хостинг + SSL + домен</li>
+        <li>Пріоритетна підтримка</li>
+        <li class="p-list--off">Мобільний додаток</li>
+        <li class="p-list--off">Особисті кабінети</li>
+      </ul>
+      <a href="https://t.me/munister_v" target="_blank" rel="noopener" class="btn btn-ac plan-btn">Замовити</a>
+    </div>
+    <div class="plan">
+      <div class="p-tier">Про</div>
+      <h3 class="p-name">Веб-додаток</h3>
+      <p class="p-desc">Ваш додаток на телефоні — без App Store, працює як звичайний додаток</p>
+      <div class="p-price">₴3&nbsp;000<span>/міс</span></div>
+      <div class="p-ready">Готовність за 10–25 днів</div>
+      <div class="p-incl">Включає</div>
+      <ul class="p-list">
+        <li>Працює на телефоні як додаток</li>
+        <li>Реєстрація і вхід користувачів</li>
+        <li>Особисті кабінети</li>
+        <li>Зберігання даних на сервері</li>
+        <li>Панель управління</li>
+        <li>Хостинг + автооновлення</li>
+        <li>Підтримка після запуску</li>
+        <li class="p-list--off">Сповіщення на телефон</li>
+      </ul>
+      <a href="https://t.me/munister_v" target="_blank" rel="noopener" class="btn btn-gh plan-btn">Замовити</a>
+    </div>
+    <div class="plan">
+      <div class="p-tier">Партнер</div>
+      <h3 class="p-name">Платформа</h3>
+      <p class="p-desc">Складна система з оплатою, сповіщеннями і особистими кабінетами</p>
+      <div class="p-price">₴6&nbsp;000<span>/міс</span></div>
+      <div class="p-ready">Готовність за 15–25 днів</div>
+      <div class="p-incl">Включає все з Про +</div>
+      <ul class="p-list">
+        <li>Сповіщення на телефон</li>
+        <li>Відео/аудіо дзвінки</li>
+        <li>Прийом оплат онлайн</li>
+        <li>Розмежування доступу</li>
+        <li>Миттєве оновлення даних</li>
+        <li>Необмежені зміни після запуску</li>
+        <li>Повний технічний супровід</li>
+        <li>Пріоритет у черзі</li>
+      </ul>
+      <a href="https://t.me/munister_v" target="_blank" rel="noopener" class="btn btn-gh plan-btn">Обговорити</a>
+    </div>
+  </div>
+  <div class="plans-foot reveal">
+    <p>Є питання щодо тарифів? <span>Напишіть — відповімо за 24 години</span></p>
+    <div class="plans-foot-links">
+      <a href="https://t.me/munister_v" target="_blank" rel="noopener">Telegram @munister_v</a>
+      <a href="mailto:hello@weego.studio">hello@weego.studio</a>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ FOP ═══ -->
+<section class="section section--alt" id="fop">
+  <div class="section-head reveal">
+    <div class="section-tag">// ФОП · ТОВ · Фонд</div>
+    <h2 class="section-h">Офіційно.<br><em>Без зайвого.</em></h2>
+    <p class="section-note">Всі послуги оформлюються з повним документообігом. Для ФОП, ТОВ, ГО, благодійних фондів та міжнародних організацій.</p>
+  </div>
+
+  <div class="fop-grid reveal">
+    <div class="fop-card">
+      <div class="fop-card-tag">ФОП 3 група</div>
+      <h3>Спрощена система</h3>
+      <p>Працюємо як ФОП 3-ї групи, єдиний податок. Ставка 5% від доходу, без ПДВ — чесна і прозора ціна без прихованих доплат.</p>
+      <ul class="fop-list">
+        <li>Єдиний податок 5%</li>
+        <li>Без ПДВ</li>
+        <li>Прозора фіксована ціна</li>
+      </ul>
+    </div>
+    <div class="fop-card">
+      <div class="fop-card-tag">Документи</div>
+      <h3>Закривні документи</h3>
+      <p>Після виконання робіт надаємо повний пакет документів для вашої бухгалтерії або звітності.</p>
+      <ul class="fop-list">
+        <li>Акт виконаних робіт</li>
+        <li>Рахунок-фактура</li>
+        <li>Договір (публічна оферта або індивідуальний)</li>
+      </ul>
+    </div>
+    <div class="fop-card">
+      <div class="fop-card-tag">Оплата</div>
+      <h3>Зручні способи</h3>
+      <p>Оплата на рахунок ФОП у зручний для вас спосіб. Для міжнародних клієнтів — IBAN / SWIFT / Wise.</p>
+      <ul class="fop-list">
+        <li>Переказ на р/р ФОП</li>
+        <li>Monobank, ПриватБанк, ПУМБ</li>
+        <li>IBAN / SWIFT / Wise</li>
+        <li>Оплата за підпискою щомісяця</li>
+      </ul>
+    </div>
+    <div class="fop-card">
+      <div class="fop-card-tag">Юридичні особи</div>
+      <h3>ТОВ, ГО, Фонди</h3>
+      <p>Укладаємо договір з юридичними особами — ТОВ, ПП, благодійними фондами, громадськими організаціями.</p>
+      <ul class="fop-list">
+        <li>Повний пакет документів для бухобліку</li>
+        <li>Додаткова угода або NDA при потребі</li>
+        <li>Рахунок на організацію</li>
+        <li>Для міжнародних НГО — окремо</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="fop-note reveal">
+    <div class="fop-note-icon">—</div>
+    <div>
+      <strong>Перша консультація безкоштовно.</strong> Обговоримо задачу, формат оформлення і вартість.
+      Для держзакупівель і грантових проєктів — також є досвід.
+      <a href="https://t.me/munister_v" target="_blank" rel="noopener">Написати в Telegram →</a>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ SYSTEM MODULES ═══ -->
+<section class="section" id="system">
+  <div class="section-head reveal">
+    <div class="section-tag">// Архітектура</div>
+    <h2 class="section-h">Не просто сайт —<br><em>система</em></h2>
+    <p class="section-note">Кожен проєкт — набір модулів, що підключаються відповідно до задач бізнесу. Починаєте з лендінгу — потім додаєте кабінет, оплату, аналітику.</p>
+  </div>
+  <div class="mods-grid reveal">
+    <div class="mod"><span class="mod-ic">⬜</span><span>Адаптивний дизайн</span></div>
+    <div class="mod"><span class="mod-ic">⬜</span><span>Адмін-панель</span></div>
+    <div class="mod"><span class="mod-ic">⬜</span><span>База даних</span></div>
+    <div class="mod"><span class="mod-ic">⬜</span><span>Авторизація</span></div>
+    <div class="mod"><span class="mod-ic">⬜</span><span>Ролі користувачів</span></div>
+    <div class="mod"><span class="mod-ic">⬜</span><span>REST API</span></div>
+    <div class="mod"><span class="mod-ic">⬜</span><span>Онлайн-оплати</span></div>
+    <div class="mod"><span class="mod-ic">⬜</span><span>Telegram-сповіщення</span></div>
+    <div class="mod"><span class="mod-ic">⬜</span><span>Аналітика</span></div>
+    <div class="mod"><span class="mod-ic">⬜</span><span>Push-сповіщення</span></div>
+    <div class="mod"><span class="mod-ic">⬜</span><span>WebSockets</span></div>
+    <div class="mod"><span class="mod-ic">⬜</span><span>Підтримка після запуску</span></div>
+  </div>
+</section>
+
+<!-- ═══ EXPERIENCE ═══ -->
+<section class="section section--alt" id="experience">
+  <div class="section-head reveal">
+    <div class="section-tag">// Досвід</div>
+    <h2 class="section-h">Проєкти та<br><em>напрями</em></h2>
+    <p class="section-note">Ми працювали з локальними українськими ініціативами та міжнародними проєктами, де важливі не лише дизайн, а й структура, логіка, стабільність і супровід.</p>
+  </div>
+  <div class="exp-grid">
+    <div class="exp-col reveal">
+      <div class="exp-flag">🇺🇦</div>
+      <h3>Україна</h3>
+      <p>Розробка сайтів і систем для локального бізнесу, благодійних фондів та соціальних ініціатив. Фокус на зручності, доступності та підтримці після запуску.</p>
+    </div>
+    <div class="exp-col reveal">
+      <div class="exp-flag">🌍</div>
+      <h3>Міжнародні проєкти</h3>
+      <p>Участь у міжнародних цифрових ініціативах: Artflaneur, Epris та інших. Веб-інтерфейси, сервісні сторінки, інформаційні системи та візуальні портали.</p>
+    </div>
+    <div class="exp-col exp-col--list reveal">
+      <ul class="exp-checks">
+        <li>Сайти для бізнесу та благодійних організацій</li>
+        <li>Сервісні та інформаційні сторінки</li>
+        <li>Веб-інтерфейси та платформи</li>
+        <li>Особисті кабінети та CRM-системи</li>
+        <li>Візуальні портали та онлайн-магазини</li>
+        <li>Telegram-боти та автоматизація</li>
+        <li>Системи для грантових і НГО-проєктів</li>
+        <li>Платіжні інтеграції (LiqPay, Stripe, Mono)</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ TEAM ═══ -->
+<section class="section" id="team">
+  <div class="section-head reveal">
+    <div class="section-tag">// Команда</div>
+    <h2 class="section-h">Хто<br><em>за цим стоїть</em></h2>
+    <p class="section-note">Невелика, але сильна команда з досвідом у product-розробці, системній архітектурі та управлінні проєктами.</p>
+  </div>
+  <div class="team-grid">
+    <div class="team-card reveal">
+      <div class="team-ava">ВМ</div>
+      <div class="team-info">
+        <div class="team-tag">Засновник · Product &amp; Systems Architect</div>
+        <h3>В'ячеслав Муністер</h3>
+        <p>Відповідає за архітектуру цифрових рішень, концепцію продукту, структуру інформаційних систем, UX-логіку, технічну документацію та розвиток проєктів.</p>
+        <a href="https://munister.com.ua" target="_blank" rel="noopener" class="team-link">munister.com.ua ↗</a>
       </div>
     </div>
-  </section>
-
-  <!-- ═══ SYSTEM ═══ -->
-  <section class="section section--dark" id="system">
-    <div class="container">
-      <div class="section__header">
-        <span class="section__badge">Підхід</span>
-        <h2 class="section__title">Не просто сайт — <span class="text-gradient">система</span></h2>
-        <p class="section__subtitle">Ми будуємо рішення, які можна розвивати. Кожен проєкт — набір модулів, що підключаються відповідно до завдань бізнесу.</p>
-      </div>
-      <div class="modules__grid">
-        <div class="module" data-animate>
-          <div class="module__icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/></svg></div>
-          <span>Адаптивний дизайн</span>
-        </div>
-        <div class="module" data-animate>
-          <div class="module__icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18M9 21V9"/></svg></div>
-          <span>Адмін-панель</span>
-        </div>
-        <div class="module" data-animate>
-          <div class="module__icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><ellipse cx="12" cy="5" rx="9" ry="3"/><path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"/><path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"/></svg></div>
-          <span>База даних</span>
-        </div>
-        <div class="module" data-animate>
-          <div class="module__icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2"/><circle cx="12" cy="7" r="4"/></svg></div>
-          <span>Авторизація</span>
-        </div>
-        <div class="module" data-animate>
-          <div class="module__icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 00-3-3.87M16 3.13a4 4 0 010 7.75"/></svg></div>
-          <span>Ролі користувачів</span>
-        </div>
-        <div class="module" data-animate>
-          <div class="module__icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><polyline points="16 3 21 3 21 8"/><line x1="4" y1="20" x2="21" y2="3"/><polyline points="21 16 21 21 16 21"/><line x1="15" y1="15" x2="21" y2="21"/></svg></div>
-          <span>Інтеграції</span>
-        </div>
-        <div class="module" data-animate>
-          <div class="module__icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="5" width="20" height="14" rx="2"/><line x1="2" y1="10" x2="22" y2="10"/></svg></div>
-          <span>Онлайн-оплати</span>
-        </div>
-        <div class="module" data-animate>
-          <div class="module__icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M18 8A6 6 0 006 8c0 7-3 9-3 9h18s-3-2-3-9"/><path d="M13.73 21a2 2 0 01-3.46 0"/></svg></div>
-          <span>Сповіщення</span>
-        </div>
-        <div class="module" data-animate>
-          <div class="module__icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><line x1="18" y1="20" x2="18" y2="10"/><line x1="12" y1="20" x2="12" y2="4"/><line x1="6" y1="20" x2="6" y2="14"/></svg></div>
-          <span>Аналітика</span>
-        </div>
-        <div class="module" data-animate>
-          <div class="module__icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg></div>
-          <span>Підтримка після запуску</span>
-        </div>
-      </div>
-      <div class="system__desc" data-animate>
-        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#6366f1" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 8v4l3 3"/></svg>
-        <p>Починаєте з лендінгу — потім додаєте кабінет, потім інтегруєте оплату. <strong>Система росте разом із вашим бізнесом.</strong></p>
+    <div class="team-card reveal">
+      <div class="team-ava">ЕН</div>
+      <div class="team-info">
+        <div class="team-tag">Керівний партнер · Operations &amp; Delivery Lead</div>
+        <h3>Едуард Нестеров</h3>
+        <p>Координує взаємодію з клієнтами, організацію процесів, управління запуском і супроводом проєктів. Забезпечує своєчасну та якісну реалізацію на кожному етапі.</p>
+        <div class="team-status"><span class="team-dot"></span>Доступний для проєктів</div>
       </div>
     </div>
-  </section>
+  </div>
+</section>
 
-  <!-- ═══ EXPERIENCE ═══ -->
-  <section class="section" id="experience">
-    <div class="container">
-      <div class="section__header">
-        <span class="section__badge">Досвід</span>
-        <h2 class="section__title">Проєкти та <span class="text-gradient">напрями</span></h2>
-        <p class="section__subtitle">Ми працювали з локальними українськими ініціативами та міжнародними проєктами, де важливі не лише дизайн, а й структура, зрозуміла логіка, стабільність і подальший супровід.</p>
-      </div>
-      <div class="experience__grid">
-        <div class="exp-card" data-animate>
-          <div class="exp-card__icon">🇺🇦</div>
-          <div class="exp-card__content">
-            <h3>Україна</h3>
-            <p>Розробка сайтів і систем для локального бізнесу, благодійних фондів та соціальних ініціатив. Фокус на зручності, доступності та підтримці.</p>
-          </div>
-        </div>
-        <div class="exp-card" data-animate>
-          <div class="exp-card__icon">🌍</div>
-          <div class="exp-card__content">
-            <h3>Міжнародні проєкти</h3>
-            <p>Участь у міжнародних цифрових ініціативах: Artflaneur, Epris та інших. Веб-інтерфейси, сервісні сторінки, інформаційні системи та візуальні портали.</p>
-          </div>
-        </div>
-        <div class="exp-card exp-card--wide" data-animate>
-          <div class="exp-card__list">
-            <div class="exp-item">
-              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#6366f1" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
-              <span>Сайти для бізнесу та благодійних організацій</span>
-            </div>
-            <div class="exp-item">
-              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#6366f1" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
-              <span>Сервісні та інформаційні сторінки</span>
-            </div>
-            <div class="exp-item">
-              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#6366f1" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
-              <span>Веб-інтерфейси та платформи</span>
-            </div>
-            <div class="exp-item">
-              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#6366f1" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
-              <span>Особисті кабінети та CRM-системи</span>
-            </div>
-            <div class="exp-item">
-              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#6366f1" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
-              <span>Візуальні портали та онлайн-магазини</span>
-            </div>
-            <div class="exp-item">
-              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#6366f1" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
-              <span>Telegram-боти та автоматизація процесів</span>
-            </div>
-          </div>
-        </div>
+<!-- ═══ PROCESS ═══ -->
+<section class="section section--alt" id="process">
+  <div class="section-head reveal">
+    <div class="section-tag">// Процес</div>
+    <h2 class="section-h">Як ми<br><em>працюємо</em></h2>
+    <p class="section-note">Прозорий процес, зрозумілі етапи, постійний зв'язок. Ви знаєте, що відбувається на кожному кроці.</p>
+  </div>
+  <div class="steps">
+    <div class="step reveal">
+      <div class="step-n">01</div>
+      <div class="step-body">
+        <h3>Обговорення задачі</h3>
+        <p>Дізнаємось про ваш бізнес, цілі та аудиторію. Формуємо зрозумілий бриф і обговорюємо підходящий формат рішення.</p>
       </div>
     </div>
-  </section>
-
-  <!-- ═══ FORMATS ═══ -->
-  <section class="section section--dark" id="formats">
-    <div class="container">
-      <div class="section__header">
-        <span class="section__badge">Формати</span>
-        <h2 class="section__title">Формати <span class="text-gradient">співпраці</span></h2>
-        <p class="section__subtitle">Обираєте формат — ми адаптуємо підхід. Розробка, хостинг, оновлення та підтримка можуть бути об'єднані в один зрозумілий щомісячний формат.</p>
-      </div>
-      <div class="formats__grid">
-        <div class="format-card" data-animate>
-          <div class="format-card__badge">Старт</div>
-          <h3>Швидкий старт</h3>
-          <p class="format-card__desc">Лендінг або сайт-візитка. Якісно, без зайвого, готово до запуску за тиждень.</p>
-          <ul class="format-card__list">
-            <li>Адаптивний дизайн</li>
-            <li>Форма зворотного зв'язку</li>
-            <li>SEO-основа</li>
-            <li>Хостинг і домен</li>
-          </ul>
-          <a href="#contact" class="btn btn--outline btn--sm">Обговорити →</a>
-        </div>
-        <div class="format-card format-card--featured" data-animate>
-          <div class="format-card__badge format-card__badge--featured">Популярне</div>
-          <h3>Бізнес-рішення</h3>
-          <p class="format-card__desc">Сайт + заявки + особистий кабінет. Повноцінний цифровий інструмент для бізнесу.</p>
-          <ul class="format-card__list">
-            <li>Сайт із CMS</li>
-            <li>Система заявок</li>
-            <li>Особистий кабінет</li>
-            <li>Сповіщення</li>
-            <li>Аналітика</li>
-          </ul>
-          <a href="#contact" class="btn btn--primary btn--sm">Обговорити →</a>
-        </div>
-        <div class="format-card" data-animate>
-          <div class="format-card__badge">Авто</div>
-          <h3>Автоматизація</h3>
-          <p class="format-card__desc">CRM, Telegram-боти, онлайн-оплати, звіти. Мінімум ручних дій — максимум ефективності.</p>
-          <ul class="format-card__list">
-            <li>Telegram-бот</li>
-            <li>CRM-система</li>
-            <li>Онлайн-оплата</li>
-            <li>Автоматичні звіти</li>
-          </ul>
-          <a href="#contact" class="btn btn--outline btn--sm">Обговорити →</a>
-        </div>
-        <div class="format-card" data-animate>
-          <div class="format-card__badge">Платформа</div>
-          <h3>Складна система</h3>
-          <p class="format-card__desc">Повноцінна інформаційна платформа: база даних, API, ролі, інтеграції, кабінети.</p>
-          <ul class="format-card__list">
-            <li>Архітектура системи</li>
-            <li>API та інтеграції</li>
-            <li>Ролі та доступи</li>
-            <li>Масштабованість</li>
-          </ul>
-          <a href="#contact" class="btn btn--outline btn--sm">Обговорити →</a>
-        </div>
-      </div>
-      <div class="formats__note" data-animate>
-        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#6366f1" stroke-width="2" style="flex-shrink:0;margin-top:2px"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
-        <p>Розробка, хостинг, оновлення та підтримка можуть бути об'єднані в один зрозумілий щомісячний формат — щоб ви платили за результат, а не окремо за кожну послугу.</p>
+    <div class="step reveal">
+      <div class="step-n">02</div>
+      <div class="step-body">
+        <h3>Структура і прототип</h3>
+        <p>Проєктуємо структуру, логіку переходів, необхідні модулі і функції. Погоджуємо з вами перед переходом до дизайну.</p>
       </div>
     </div>
-  </section>
-
-  <!-- ═══ TEAM ═══ -->
-  <section class="section" id="team">
-    <div class="container">
-      <div class="section__header">
-        <span class="section__badge">Команда</span>
-        <h2 class="section__title">Хто <span class="text-gradient">за цим стоїть</span></h2>
-        <p class="section__subtitle">Невелика, але сильна команда з досвідом у product-розробці, системній архітектурі та управлінні проєктами.</p>
-      </div>
-      <div class="team__grid">
-        <div class="team-card" data-animate>
-          <div class="team-card__avatar">
-            <div class="avatar-placeholder avatar-placeholder--indigo">ВМ</div>
-            <div class="team-card__status"><span class="status-dot"></span>Доступний</div>
-          </div>
-          <div class="team-card__content">
-            <h3>В'ячеслав Муністер</h3>
-            <span class="team-card__role">Засновник · Product &amp; Systems Architect</span>
-            <p class="team-card__bio">Відповідає за архітектуру цифрових рішень, концепцію продукту, структуру інформаційних систем, UX-логіку, технічну документацію та розвиток проєктів.</p>
-            <a href="https://munister.com.ua" target="_blank" rel="noopener" class="team-card__link">
-              munister.com.ua
-              <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
-            </a>
-          </div>
-        </div>
-        <div class="team-card" data-animate>
-          <div class="team-card__avatar">
-            <div class="avatar-placeholder avatar-placeholder--purple">ЕН</div>
-            <div class="team-card__status"><span class="status-dot"></span>Доступний</div>
-          </div>
-          <div class="team-card__content">
-            <h3>Едуард Нестеров</h3>
-            <span class="team-card__role">Керівний партнер · Operations &amp; Delivery Lead</span>
-            <p class="team-card__bio">Координує взаємодію з клієнтами, організацію процесів, управління запуском і супроводом проєктів. Забезпечує своєчасну та якісну реалізацію на кожному етапі.</p>
-          </div>
-        </div>
+    <div class="step reveal">
+      <div class="step-n">03</div>
+      <div class="step-body">
+        <h3>Дизайн і збірка</h3>
+        <p>Розробляємо візуальний стиль і збираємо сторінки або інтерфейси відповідно до структури. Показуємо і збираємо зворотний зв'язок.</p>
       </div>
     </div>
-  </section>
-
-  <!-- ═══ PROCESS ═══ -->
-  <section class="section section--dark" id="process">
-    <div class="container">
-      <div class="section__header">
-        <span class="section__badge">Процес</span>
-        <h2 class="section__title">Як ми <span class="text-gradient">працюємо</span></h2>
-        <p class="section__subtitle">Прозорий процес, зрозумілі етапи, постійний зв'язок. Ви знаєте, що відбувається на кожному кроці.</p>
-      </div>
-      <div class="process__list">
-        <div class="process-step" data-animate>
-          <div class="process-step__num">01</div>
-          <div class="process-step__content">
-            <h3>Обговорення задачі</h3>
-            <p>Дізнаємось про ваш бізнес, цілі та аудиторію. Формуємо зрозумілий бриф і обговорюємо підходящий формат рішення.</p>
-          </div>
-        </div>
-        <div class="process-step" data-animate>
-          <div class="process-step__num">02</div>
-          <div class="process-step__content">
-            <h3>Структура і прототип</h3>
-            <p>Проєктуємо структуру, логіку переходів, необхідні модулі і функції. Погоджуємо з вами перед переходом до дизайну.</p>
-          </div>
-        </div>
-        <div class="process-step" data-animate>
-          <div class="process-step__num">03</div>
-          <div class="process-step__content">
-            <h3>Дизайн і збірка</h3>
-            <p>Розробляємо візуальний стиль і збираємо сторінки або інтерфейси відповідно до структури. Показуємо і збираємо зворотний зв'язок.</p>
-          </div>
-        </div>
-        <div class="process-step" data-animate>
-          <div class="process-step__num">04</div>
-          <div class="process-step__content">
-            <h3>Підключення функцій</h3>
-            <p>Реалізуємо бекенд-логіку, інтеграції, авторизацію, оплати, боти та інші необхідні функції системи.</p>
-          </div>
-        </div>
-        <div class="process-step" data-animate>
-          <div class="process-step__num">05</div>
-          <div class="process-step__content">
-            <h3>Запуск</h3>
-            <p>Розгортаємо проєкт на сервері, перевіряємо від А до Я, налаштовуємо домен і публікуємо. Ви отримуєте готову систему.</p>
-          </div>
-        </div>
-        <div class="process-step" data-animate>
-          <div class="process-step__num">06</div>
-          <div class="process-step__content">
-            <h3>Супровід і розвиток</h3>
-            <p>Залишаємося поряд після запуску: оновлення, нові функції, моніторинг, технічна підтримка. Ваш проєкт продовжує розвиватися.</p>
-          </div>
-        </div>
+    <div class="step reveal">
+      <div class="step-n">04</div>
+      <div class="step-body">
+        <h3>Підключення функцій</h3>
+        <p>Реалізуємо бекенд-логіку, інтеграції, авторизацію, оплати, боти та інші необхідні функції системи.</p>
       </div>
     </div>
-  </section>
-
-  <!-- ═══ STACK ═══ -->
-  <section class="section" id="stack">
-    <div class="container">
-      <div class="section__header">
-        <span class="section__badge">Технології</span>
-        <h2 class="section__title">Технологічний <span class="text-gradient">стек</span></h2>
-        <p class="section__subtitle">Сучасні, надійні інструменти. Стек підбирається під задачу — без зайвого, але з запасом на масштабування.</p>
-      </div>
-      <div class="stack__grid">
-        <div class="stack-category" data-animate>
-          <h4>Frontend</h4>
-          <div class="stack__tags">
-            <span class="tag">HTML</span><span class="tag">CSS</span>
-            <span class="tag">JavaScript</span><span class="tag">React</span>
-          </div>
-        </div>
-        <div class="stack-category" data-animate>
-          <h4>Backend</h4>
-          <div class="stack__tags">
-            <span class="tag">Python / Flask</span>
-            <span class="tag">Node.js</span><span class="tag">REST API</span>
-          </div>
-        </div>
-        <div class="stack-category" data-animate>
-          <h4>Data</h4>
-          <div class="stack__tags">
-            <span class="tag">PostgreSQL</span>
-            <span class="tag">Redis</span><span class="tag">SQLite</span>
-          </div>
-        </div>
-        <div class="stack-category" data-animate>
-          <h4>Інтеграції</h4>
-          <div class="stack__tags">
-            <span class="tag">Telegram API</span>
-            <span class="tag">LiqPay</span><span class="tag">Stripe</span>
-            <span class="tag">Monobank</span>
-          </div>
-        </div>
-        <div class="stack-category" data-animate>
-          <h4>Хостинг</h4>
-          <div class="stack__tags">
-            <span class="tag">Vercel</span><span class="tag">Netlify</span>
-            <span class="tag">Render</span><span class="tag">VPS</span>
-            <span class="tag">GitHub Pages</span>
-          </div>
-        </div>
-        <div class="stack-category" data-animate>
-          <h4>Admin / CMS</h4>
-          <div class="stack__tags">
-            <span class="tag">Strapi</span>
-            <span class="tag">React Admin</span>
-            <span class="tag">Custom Admin</span>
-          </div>
-        </div>
-        <div class="stack-category" data-animate>
-          <h4>Real-time</h4>
-          <div class="stack__tags">
-            <span class="tag">WebSockets</span>
-            <span class="tag">WebRTC</span>
-          </div>
-        </div>
-        <div class="stack-category" data-animate>
-          <h4>DevOps</h4>
-          <div class="stack__tags">
-            <span class="tag">GitHub Actions</span>
-            <span class="tag">Docker</span><span class="tag">Nginx</span>
-          </div>
-        </div>
+    <div class="step reveal">
+      <div class="step-n">05</div>
+      <div class="step-body">
+        <h3>Запуск</h3>
+        <p>Розгортаємо проєкт на сервері, перевіряємо від А до Я, налаштовуємо домен і публікуємо. Ви отримуєте готову систему.</p>
       </div>
     </div>
-  </section>
-
-  <!-- ═══ CTA ═══ -->
-  <section class="section cta-section" id="contact">
-    <div class="cta__bg-glow cta__bg-glow--1"></div>
-    <div class="cta__bg-glow cta__bg-glow--2"></div>
-    <div class="container">
-      <div class="cta__inner" data-animate>
-        <span class="section__badge">Контакт</span>
-        <h2 class="cta__title">Потрібен сайт, кабінет або система <span class="text-gradient">для вашого бізнесу?</span></h2>
-        <p class="cta__subtitle">Опишіть задачу — ми запропонуємо зрозумілий формат запуску, стек, терміни та варіант супроводу.</p>
-        <div class="cta__actions">
-          <a href="https://t.me/munister_v" target="_blank" rel="noopener" class="btn btn--primary btn--lg">
-            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M11.944 0A12 12 0 000 12a12 12 0 0012 12 12 12 0 0012-12A12 12 0 0012 0a12 12 0 00-.056 0zm4.962 7.224c.1-.002.321.023.465.14a.506.506 0 01.171.325c.016.093.036.306.02.472-.18 1.898-.962 6.502-1.36 8.627-.168.9-.499 1.201-.82 1.23-.696.065-1.225-.46-1.9-.902-1.056-.693-1.653-1.124-2.678-1.8-1.185-.78-.417-1.21.258-1.91.177-.184 3.247-2.977 3.307-3.23.007-.032.014-.15-.056-.212s-.174-.041-.249-.024c-.106.024-1.793 1.14-5.061 3.345-.48.33-.913.49-1.302.48-.428-.008-1.252-.241-1.865-.44-.752-.245-1.349-.374-1.297-.789.027-.216.325-.437.893-.663 3.498-1.524 5.83-2.529 6.998-3.014 3.332-1.386 4.025-1.627 4.476-1.635z"/></svg>
-            Написати в Telegram
-          </a>
-          <a href="mailto:hello@weego.studio" class="btn btn--ghost btn--lg">
-            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
-            Надіслати запит
-          </a>
-        </div>
+    <div class="step reveal">
+      <div class="step-n">06</div>
+      <div class="step-body">
+        <h3>Супровід і розвиток</h3>
+        <p>Залишаємося поряд після запуску: оновлення, нові функції, моніторинг, технічна підтримка. Ваш проєкт продовжує розвиватися.</p>
       </div>
     </div>
-  </section>
+  </div>
+</section>
 
-  <!-- ═══ FOOTER ═══ -->
-  <footer class="footer">
-    <div class="container">
-      <div class="footer__inner">
-        <div class="footer__brand">
-          <a href="#" class="nav__logo"><span class="logo-w">W</span>EEGO</a>
-          <p>Цифрова студія. Створюємо системи, що працюють на бізнес.</p>
-        </div>
-        <nav class="footer__links">
-          <a href="#services">Послуги</a>
-          <a href="#formats">Формати</a>
-          <a href="#team">Команда</a>
-          <a href="#stack">Стек</a>
-          <a href="#contact">Контакт</a>
-        </nav>
-        <div class="footer__social">
-          <a href="https://t.me/munister_v" target="_blank" rel="noopener" aria-label="Telegram">
-            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M11.944 0A12 12 0 000 12a12 12 0 0012 12 12 12 0 0012-12A12 12 0 0012 0a12 12 0 00-.056 0zm4.962 7.224c.1-.002.321.023.465.14a.506.506 0 01.171.325c.016.093.036.306.02.472-.18 1.898-.962 6.502-1.36 8.627-.168.9-.499 1.201-.82 1.23-.696.065-1.225-.46-1.9-.902-1.056-.693-1.653-1.124-2.678-1.8-1.185-.78-.417-1.21.258-1.91.177-.184 3.247-2.977 3.307-3.23.007-.032.014-.15-.056-.212s-.174-.041-.249-.024c-.106.024-1.793 1.14-5.061 3.345-.48.33-.913.49-1.302.48-.428-.008-1.252-.241-1.865-.44-.752-.245-1.349-.374-1.297-.789.027-.216.325-.437.893-.663 3.498-1.524 5.83-2.529 6.998-3.014 3.332-1.386 4.025-1.627 4.476-1.635z"/></svg>
-          </a>
-        </div>
-      </div>
-      <div class="footer__bottom">
-        <p>© 2025 WEEGO. Усі права захищено.</p>
-        <p>weego.munister.com.ua</p>
+<!-- ═══ STACK ═══ -->
+<section class="section" id="stack">
+  <div class="section-head reveal">
+    <div class="section-tag">// Технології</div>
+    <h2 class="section-h">Технологічний<br><em>стек</em></h2>
+    <p class="section-note">Сучасні, надійні інструменти. Стек підбирається під задачу — без зайвого, але з запасом на масштабування.</p>
+  </div>
+  <div class="stack-grid reveal">
+    <div class="stack-col">
+      <div class="stack-lbl">Frontend</div>
+      <div class="stack-tags">
+        <span>HTML</span><span>CSS</span><span>JavaScript</span><span>React</span>
       </div>
     </div>
-  </footer>
+    <div class="stack-col">
+      <div class="stack-lbl">Backend</div>
+      <div class="stack-tags">
+        <span>Python / Flask</span><span>Node.js</span><span>REST API</span>
+      </div>
+    </div>
+    <div class="stack-col">
+      <div class="stack-lbl">Data</div>
+      <div class="stack-tags">
+        <span>PostgreSQL</span><span>Redis</span><span>SQLite</span>
+      </div>
+    </div>
+    <div class="stack-col">
+      <div class="stack-lbl">Інтеграції</div>
+      <div class="stack-tags">
+        <span>Telegram API</span><span>LiqPay</span><span>Stripe</span><span>Monobank</span>
+      </div>
+    </div>
+    <div class="stack-col">
+      <div class="stack-lbl">Хостинг</div>
+      <div class="stack-tags">
+        <span>Vercel</span><span>Netlify</span><span>Render</span><span>VPS</span><span>GitHub Pages</span>
+      </div>
+    </div>
+    <div class="stack-col">
+      <div class="stack-lbl">Admin / CMS</div>
+      <div class="stack-tags">
+        <span>Strapi</span><span>React Admin</span><span>Custom Admin</span>
+      </div>
+    </div>
+    <div class="stack-col">
+      <div class="stack-lbl">Real-time</div>
+      <div class="stack-tags">
+        <span>WebSockets</span><span>WebRTC</span>
+      </div>
+    </div>
+    <div class="stack-col">
+      <div class="stack-lbl">DevOps</div>
+      <div class="stack-tags">
+        <span>GitHub Actions</span><span>Docker</span><span>Nginx</span>
+      </div>
+    </div>
+  </div>
+</section>
 
-  <script src="script.js"></script>
+<!-- ═══ CTA ═══ -->
+<section class="cta" id="contact">
+  <div class="cta-left reveal">
+    <div class="section-tag">// Старт</div>
+    <h2 class="cta-h">Є задача —<br><em>обговоримо</em></h2>
+    <p class="cta-sub">Перша консультація безкоштовно. Відповідь протягом 24 годин. Працюємо офіційно для ФОП, ТОВ і фондів.</p>
+    <div class="cta-btns">
+      <a href="https://t.me/munister_v" target="_blank" rel="noopener" class="btn btn-ac">Написати в Telegram ↗</a>
+      <a href="mailto:hello@weego.studio" class="btn btn-gh">Email ↗</a>
+    </div>
+  </div>
+  <div class="cta-right reveal">
+    <a href="mailto:hello@weego.studio" class="cta-lnk">
+      <div class="cta-lnk-ico">@</div>
+      <div><div class="cta-lnk-lbl">Email</div><div class="cta-lnk-val">hello@weego.studio</div></div>
+    </a>
+    <a href="https://t.me/munister_v" target="_blank" rel="noopener" class="cta-lnk">
+      <div class="cta-lnk-ico">✈</div>
+      <div><div class="cta-lnk-lbl">Telegram</div><div class="cta-lnk-val">@munister_v</div></div>
+    </a>
+    <a href="https://munister.com.ua" target="_blank" rel="noopener" class="cta-lnk">
+      <div class="cta-lnk-ico">↗</div>
+      <div><div class="cta-lnk-lbl">Портфоліо засновника</div><div class="cta-lnk-val">munister.com.ua</div></div>
+    </a>
+    <div class="cta-doc-note">
+      Для ФОП і ТОВ — <strong>акт виконаних робіт, рахунок, договір</strong>.<br>
+      Для міжнародних клієнтів — <strong>IBAN / SWIFT / Wise</strong>.
+    </div>
+  </div>
+</section>
+
+<!-- ═══ FOOTER ═══ -->
+<footer class="footer">
+  <div class="footer-copy">© 2025 WEEGO · Цифрові рішення для бізнесу</div>
+  <div class="footer-links">
+    <a href="#services">Послуги</a>
+    <a href="#formats">Тарифи</a>
+    <a href="#fop">ФОП / ТОВ</a>
+    <a href="#team">Команда</a>
+    <a href="https://t.me/munister_v" target="_blank" rel="noopener">Telegram</a>
+    <a href="mailto:hello@weego.studio">Email</a>
+    <a href="https://munister.com.ua" target="_blank" rel="noopener">munister.com.ua</a>
+  </div>
+</footer>
+
+<!-- Bottom CTA bar (mobile) -->
+<div class="sticky-bar">
+  <a href="https://t.me/munister_v" target="_blank" rel="noopener" class="btn btn-ac">✈ Telegram</a>
+  <a href="#formats" class="btn btn-gh">Тарифи</a>
+</div>
+
+<script src="script.js"></script>
 </body>
 </html>

@@ -1,71 +1,57 @@
-// Nav scroll effect
+// Nav scroll
 const nav = document.getElementById('nav');
-window.addEventListener('scroll', () => {
-  nav.classList.toggle('scrolled', window.scrollY > 40);
-}, { passive: true });
+window.addEventListener('scroll', () => {}, { passive: true });
 
-// Mobile menu
+// Burger
 const burger = document.getElementById('burger');
-const mobileMenu = document.getElementById('mobileMenu');
-
+const mobileNav = document.getElementById('mobileNav');
 burger.addEventListener('click', () => {
-  const open = mobileMenu.classList.toggle('open');
+  const open = mobileNav.classList.toggle('open');
   burger.classList.toggle('open', open);
-  burger.setAttribute('aria-expanded', open);
 });
-
-document.querySelectorAll('.mobile-link').forEach(link => {
-  link.addEventListener('click', () => {
-    mobileMenu.classList.remove('open');
+document.querySelectorAll('.m-link').forEach(l => {
+  l.addEventListener('click', () => {
+    mobileNav.classList.remove('open');
     burger.classList.remove('open');
   });
 });
-
-// Close mobile menu on outside click
 document.addEventListener('click', e => {
-  if (!nav.contains(e.target) && !mobileMenu.contains(e.target)) {
-    mobileMenu.classList.remove('open');
+  if (!nav.contains(e.target) && !mobileNav.contains(e.target)) {
+    mobileNav.classList.remove('open');
     burger.classList.remove('open');
   }
 });
 
-// Intersection Observer — staggered entrance animations
-const observer = new IntersectionObserver((entries) => {
+// Reveal on scroll
+const io = new IntersectionObserver((entries) => {
   entries.forEach(entry => {
     if (!entry.isIntersecting) return;
-    const el = entry.target;
-    const siblings = el.parentElement.querySelectorAll('[data-animate]');
-    let delay = 0;
-    siblings.forEach((sib, i) => {
-      if (sib === el) delay = i * 80;
-    });
-    setTimeout(() => el.classList.add('visible'), delay);
-    observer.unobserve(el);
+    const siblings = entry.target.parentElement.querySelectorAll('.reveal:not(.vis)');
+    let idx = 0;
+    siblings.forEach((s, i) => { if (s === entry.target) idx = i; });
+    setTimeout(() => entry.target.classList.add('vis'), idx * 70);
+    io.unobserve(entry.target);
   });
-}, { threshold: 0.1, rootMargin: '0px 0px -40px 0px' });
+}, { threshold: 0.08, rootMargin: '0px 0px -30px 0px' });
 
-document.querySelectorAll('[data-animate]').forEach(el => observer.observe(el));
+document.querySelectorAll('.reveal').forEach(el => io.observe(el));
 
-// Smooth scroll for anchor links
-document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-  anchor.addEventListener('click', function (e) {
+// Smooth scroll
+document.querySelectorAll('a[href^="#"]').forEach(a => {
+  a.addEventListener('click', function(e) {
     const target = document.querySelector(this.getAttribute('href'));
     if (!target) return;
     e.preventDefault();
-    const offset = 72;
-    const top = target.getBoundingClientRect().top + window.scrollY - offset;
-    window.scrollTo({ top, behavior: 'smooth' });
+    window.scrollTo({ top: target.getBoundingClientRect().top + scrollY - 52, behavior: 'smooth' });
   });
 });
 
-// Animate mini-chart bars on hero load
+// Chart bar animation on load
 window.addEventListener('load', () => {
-  document.querySelectorAll('.bar').forEach((bar, i) => {
-    bar.style.transform = 'scaleY(0)';
-    bar.style.transformOrigin = 'bottom';
-    bar.style.transition = `transform 0.5s ease ${i * 0.07}s`;
-    requestAnimationFrame(() => {
-      setTimeout(() => { bar.style.transform = 'scaleY(1)'; }, 300);
-    });
+  document.querySelectorAll('.dc-bar').forEach((b, i) => {
+    b.style.transformOrigin = 'bottom';
+    b.style.transform = 'scaleY(0)';
+    b.style.transition = `transform .45s ease ${i * .06 + .3}s`;
+    requestAnimationFrame(() => { b.style.transform = 'scaleY(1)'; });
   });
 });
