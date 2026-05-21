@@ -24,7 +24,7 @@
     .hero-h{font-family:"IBM Plex Serif",Georgia,serif;font-weight:300;line-height:1.08;color:#f0f0f0}.hero-h em{color:#d4c4b5}
     @media(max-width:768px){.n-links,.n-r{display:none!important}.n-burger{display:flex!important}.hero{display:block!important;overflow:visible!important}.hero-inner{padding:76px 18px 36px!important;max-width:none!important;justify-content:flex-start!important}.hero-h{font-size:clamp(36px,11.5vw,44px)!important;margin:0 0 20px!important}.hero-sub{font-size:15px!important;line-height:1.7!important}.hero-cta-wrap{display:flex!important;flex-direction:column!important;gap:10px!important}.hero-cta-wrap .btn{width:100%!important;justify-content:center!important}.hero-stats{display:grid!important;grid-template-columns:repeat(2,minmax(0,1fr))!important;gap:8px!important}}
   </style>
-  <link rel="stylesheet" href="style.css?v=20260521-emergency">
+  <link rel="stylesheet" href="style.css?v=20260521-systems">
 </head>
 <body>
 
@@ -179,92 +179,87 @@
 <!-- ═══ SERVICES ═══ -->
 <section class="section" id="services">
   <div class="section-head reveal">
-    <div class="section-tag">// Послуги</div>
+    <div class="section-tag">// Системи в роботі</div>
     <h2 class="section-h">Що ми<br><em>робимо</em></h2>
-    <p class="section-note">Від першого лендінгу до складної інформаційної системи — будуємо та супроводжуємо цифрові продукти на кожному рівні.</p>
+    <div class="section-copy">
+      <p class="section-note">Тарифи, пакети й умови винесені на окрему сторінку. Тут показуємо, як після запуску працюють системи WEEGO: CRM, кабінети, сповіщення, аналітика та автоматизації.</p>
+      <a href="https://munister.com.ua/offer" class="btn btn-ac">Дивитися офер ↗</a>
+    </div>
   </div>
-  <div class="srv-grid">
-    <article class="srv reveal">
-      <div class="srv-tag">Сайт</div>
-      <h3 class="srv-h">Сайти та лендінги</h3>
-      <p class="srv-desc">Швидкий старт для бізнесу або продукту. Адаптивний дизайн, SEO-основа, форми зворотного зв'язку.</p>
-      <ul class="srv-list">
-        <li>Адаптивний дизайн</li>
-        <li>SEO-оптимізація</li>
-        <li>Форма заявки</li>
-        <li>CMS — самостійне редагування</li>
-        <li>Хостинг + SSL</li>
-      </ul>
-      <div class="srv-price">від ₴600<span>/міс</span></div>
+  <div class="systems-showcase">
+    <article class="system-card system-card--wide reveal">
+      <div class="system-copy">
+        <div class="system-kicker">CRM-ядро</div>
+        <h3>Заявки не губляться — вони рухаються по воронці</h3>
+        <p>Форми з сайту, Telegram-бот, дзвінки й ручні ліди потрапляють в одну систему зі статусами, відповідальними та наступними діями.</p>
+      </div>
+      <div class="crm-board" aria-hidden="true">
+        <div class="crm-lane crm-lane--cyan">
+          <span>Нові</span>
+          <b class="crm-ticket">Лендінг</b>
+          <b class="crm-ticket">Бот</b>
+          <b class="crm-ticket">Форма</b>
+        </div>
+        <div class="crm-lane crm-lane--amber">
+          <span>В роботі</span>
+          <b class="crm-ticket">Бриф</b>
+          <b class="crm-ticket">Дзвінок</b>
+        </div>
+        <div class="crm-lane crm-lane--green">
+          <span>Готово</span>
+          <b class="crm-ticket">Оплата</b>
+          <b class="crm-ticket">Запуск</b>
+        </div>
+      </div>
     </article>
-    <article class="srv reveal">
-      <div class="srv-tag">Бізнес</div>
-      <h3 class="srv-h">Корпоративний сайт</h3>
-      <p class="srv-desc">Повноцінна веб-присутність: структура, контент, блог, CMS для самостійного оновлення.</p>
-      <ul class="srv-list">
-        <li>До 10 сторінок</li>
-        <li>Ви самі змінюєте текст і фото</li>
-        <li>Пріоритетна підтримка</li>
-        <li>Хостинг + домен + SSL</li>
-        <li>Аналітика трафіку</li>
-      </ul>
-      <div class="srv-price">від ₴1&nbsp;500<span>/міс</span></div>
+
+    <article class="system-card reveal">
+      <div class="system-copy">
+        <div class="system-kicker">Маршрут заявки</div>
+        <h3>Сайт → CRM → менеджер</h3>
+        <p>Клієнт залишає заявку, система створює картку, ставить задачу й одразу відправляє сповіщення команді.</p>
+      </div>
+      <div class="flow-visual" aria-hidden="true">
+        <div class="flow-node">WEB</div>
+        <div class="flow-line"><span></span></div>
+        <div class="flow-node flow-node--hot">CRM</div>
+        <div class="flow-line"><span></span></div>
+        <div class="flow-node">TG</div>
+      </div>
     </article>
-    <article class="srv reveal">
-      <div class="srv-tag srv-tag--pop">Популярне</div>
-      <h3 class="srv-h">Кабінет + CRM</h3>
-      <p class="srv-desc">Особистий кабінет для клієнта, система обліку заявок, воронки, статуси, сповіщення.</p>
-      <ul class="srv-list">
-        <li>Реєстрація / вхід</li>
-        <li>Ролі користувачів</li>
-        <li>Картки заявок і статуси</li>
-        <li>Сповіщення в Telegram</li>
-        <li>Аналітика для власника</li>
-      </ul>
-      <div class="srv-price">від ₴2&nbsp;600<span>/міс</span></div>
+
+    <article class="system-card reveal">
+      <div class="system-copy">
+        <div class="system-kicker">Аналітика</div>
+        <h3>Власник бачить цифри без ручних таблиць</h3>
+        <p>Конверсії, джерела заявок, активність менеджерів і суми оплат збираються в зрозумілу панель.</p>
+      </div>
+      <div class="metric-panel" aria-hidden="true">
+        <div class="metric-row"><span>Ліди</span><b style="--w: 82%"></b></div>
+        <div class="metric-row"><span>Оплати</span><b style="--w: 64%"></b></div>
+        <div class="metric-row"><span>Повтори</span><b style="--w: 46%"></b></div>
+        <div class="metric-total">+37% <span>до минулого місяця</span></div>
+      </div>
     </article>
-    <article class="srv reveal">
-      <div class="srv-tag">E-commerce</div>
-      <h3 class="srv-h">Інтернет-магазин</h3>
-      <p class="srv-desc">Каталог товарів, кошик, онлайн-оплата, доставка Новою Поштою, облік залишків.</p>
-      <ul class="srv-list">
-        <li>Каталог з фото і цінами</li>
-        <li>Кошик і онлайн-оплата</li>
-        <li>Нова Пошта / Укрпошта</li>
-        <li>Склад і залишки</li>
-        <li>Звіти по продажах</li>
-      </ul>
-      <div class="srv-price">від ₴3&nbsp;000<span>/міс</span></div>
-    </article>
-    <article class="srv reveal">
-      <div class="srv-tag">Авто</div>
-      <h3 class="srv-h">Telegram-бот</h3>
-      <p class="srv-desc">Автоматизація прийому заявок, сповіщень і взаємодії з клієнтами через Telegram.</p>
-      <ul class="srv-list">
-        <li>Прийом заявок через бота</li>
-        <li>Сповіщення менеджеру</li>
-        <li>Автовідповіді клієнтам</li>
-        <li>Підключення до сайту</li>
-        <li>Адмін-панель</li>
-      </ul>
-      <div class="srv-price">від ₴1&nbsp;400<span>/міс</span></div>
-    </article>
-    <article class="srv reveal">
-      <div class="srv-tag">Платформа</div>
-      <h3 class="srv-h">Інформаційна система</h3>
-      <p class="srv-desc">Комплексна платформа: бази даних, API, інтеграції, ролі, оплати, аналітика, кабінети.</p>
-      <ul class="srv-list">
-        <li>Архітектура під задачу</li>
-        <li>API та інтеграції</li>
-        <li>Онлайн-оплата</li>
-        <li>Реал-тайм / WebSocket</li>
-        <li>Повний технічний супровід</li>
-      </ul>
-      <div class="srv-price">від ₴6&nbsp;000<span>/міс</span></div>
+
+    <article class="system-card system-card--full reveal">
+      <div class="system-copy">
+        <div class="system-kicker">Автоматизації</div>
+        <h3>Кабінети, документи, оплати й інтеграції працюють як одна система</h3>
+        <p>Ми з'єднуємо сайт, CRM, клієнтський кабінет, Telegram, платежі, пошту та зовнішні сервіси так, щоб команда не переносила дані вручну.</p>
+      </div>
+      <div class="automation-map" aria-hidden="true">
+        <div class="auto-chip auto-chip--site">Сайт</div>
+        <div class="auto-chip auto-chip--cabinet">Кабінет</div>
+        <div class="auto-chip auto-chip--pay">Оплати</div>
+        <div class="auto-chip auto-chip--docs">Документи</div>
+        <div class="auto-chip auto-chip--api">API</div>
+        <div class="auto-chip auto-chip--notify">Сповіщення</div>
+      </div>
     </article>
   </div>
-  <div class="srv-foot reveal">
-    <p>Все включено — дизайн, розробка, хостинг і підключення домену. Після запуску <strong>сайт і код — повністю ваші</strong>.</p>
+  <div class="systems-foot reveal">
+    <p>Ця секція показує логіку продуктів, а не дублює ціни. Пакети, формати співпраці та умови опубліковані на сторінці <strong>munister.com.ua/offer</strong>.</p>
     <a href="https://munister.com.ua/offer" class="btn btn-gh">Повні тарифи ↗</a>
   </div>
 </section>
@@ -676,6 +671,6 @@
   <a href="https://munister.com.ua/offer" class="btn btn-gh">Тарифи</a>
 </div>
 
-<script src="script.js?v=20260521-emergency"></script>
+<script src="script.js?v=20260521-systems"></script>
 </body>
 </html>
