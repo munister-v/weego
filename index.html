@@ -24,7 +24,7 @@
     .hero-h{font-family:"IBM Plex Serif",Georgia,serif;font-weight:300;line-height:1.08;color:#f0f0f0}.hero-h em{color:#d4c4b5}
     @media(max-width:768px){.n-links,.n-r{display:none!important}.n-burger{display:flex!important}.hero{display:block!important;overflow:visible!important}.hero-inner{padding:76px 18px 36px!important;max-width:none!important;justify-content:flex-start!important}.hero-h{font-size:clamp(36px,11.5vw,44px)!important;margin:0 0 20px!important}.hero-sub{font-size:15px!important;line-height:1.7!important}.hero-cta-wrap{display:flex!important;flex-direction:column!important;gap:10px!important}.hero-cta-wrap .btn{width:100%!important;justify-content:center!important}.hero-stats{display:grid!important;grid-template-columns:repeat(2,minmax(0,1fr))!important;gap:8px!important}}
   </style>
-  <link rel="stylesheet" href="style.css?v=20260521-systems">
+  <link rel="stylesheet" href="style.css?v=20260521-blueprint">
 </head>
 <body>
 
@@ -187,6 +187,94 @@
     </div>
   </div>
   <div class="systems-showcase">
+    <article class="system-blueprint reveal">
+      <div class="blueprint-copy">
+        <div class="system-kicker">Операційна схема</div>
+        <h3>Будуємо не окремий сайт, а маршрут даних від першого кліку до рішення керівника</h3>
+        <p>Кожна система збирає заявки, розкладає їх по ролях, запускає правила, веде клієнта через кабінет і показує власнику, де зараз гроші, задачі та вузькі місця.</p>
+        <div class="blueprint-steps" aria-label="Етапи роботи системи">
+          <span><b>01</b> збір каналів</span>
+          <span><b>02</b> CRM і ролі</span>
+          <span><b>03</b> автоматизації</span>
+          <span><b>04</b> аналітика</span>
+        </div>
+      </div>
+
+      <div class="blueprint-canvas" aria-hidden="true">
+        <div class="bp-panel bp-panel--channels">
+          <div class="bp-panel-head">
+            <span>Вхід</span>
+            <b>5 каналів</b>
+          </div>
+          <div class="bp-source-list">
+            <span><i></i>Лендінг</span>
+            <span><i></i>Telegram</span>
+            <span><i></i>Instagram</span>
+            <span><i></i>Дзвінок</span>
+            <span><i></i>Email</span>
+          </div>
+        </div>
+
+        <div class="bp-transfer bp-transfer--in"><span></span></div>
+
+        <div class="bp-core">
+          <div class="bp-core-halo"></div>
+          <div class="bp-core-head">
+            <span>CRM kernel</span>
+            <b>active</b>
+          </div>
+          <div class="bp-lead-card">
+            <span class="bp-status">Нова заявка</span>
+            <strong>#1042 / Кабінет + CRM</strong>
+            <div class="bp-fields">
+              <span>Менеджер</span><b>Олена</b>
+              <span>SLA</span><b>14 хв</b>
+              <span>Етап</span><b>Бриф</b>
+              <span>Сума</span><b>₴24k</b>
+            </div>
+            <div class="bp-progress"><span></span></div>
+          </div>
+          <div class="bp-role-row">
+            <span>Owner</span>
+            <span>Sales</span>
+            <span>Support</span>
+          </div>
+        </div>
+
+        <div class="bp-transfer bp-transfer--out"><span></span></div>
+
+        <div class="bp-panel bp-panel--outputs">
+          <div class="bp-panel-head">
+            <span>Вихід</span>
+            <b>результат</b>
+          </div>
+          <div class="bp-output-grid">
+            <span>Задача менеджеру</span>
+            <span>Кабінет клієнта</span>
+            <span>Рахунок / оплата</span>
+            <span>Документи</span>
+            <span>Звіт власнику</span>
+            <span>Повторний дотик</span>
+          </div>
+        </div>
+
+        <div class="bp-rules">
+          <div class="bp-rule">
+            <span>IF заявка нова</span>
+            <b>створити задачу + Telegram</b>
+          </div>
+          <div class="bp-rule">
+            <span>IF оплата пройшла</span>
+            <b>відкрити доступ у кабінеті</b>
+          </div>
+          <div class="bp-rule">
+            <span>IF 24 год без відповіді</span>
+            <b>нагадати менеджеру</b>
+          </div>
+        </div>
+      </div>
+    </article>
+
     <article class="system-card system-card--wide reveal">
       <div class="system-copy">
         <div class="system-kicker">CRM-ядро</div>
@@ -671,6 +759,6 @@
   <a href="https://munister.com.ua/offer" class="btn btn-gh">Тарифи</a>
 </div>
 
-<script src="script.js?v=20260521-systems"></script>
+<script src="script.js?v=20260521-blueprint"></script>
 </body>
 </html>
